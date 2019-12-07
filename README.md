@@ -9,6 +9,10 @@ git clone https://github.com/pbssubhash/AbuseIPDBChecker # need git for getting 
 cd AbuseIPDBChecker
 python AbuseIPDBChecker.py # will print the help
 ```
+## Get an API Key 
+1. Go to https://www.abuseipdb.com/ and sign up for a new account.
+2. Confirm your email and navigate to https://www.abuseipdb.com/account/api and Create a new API Key.
+3. Replace the key inside AbuseIPDBChecker.py on line 5, `KEY=`
 
 ## Let's get rolling!
 ### From a File:
