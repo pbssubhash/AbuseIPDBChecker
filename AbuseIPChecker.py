@@ -2,7 +2,7 @@
 import requests
 import argparse
 import json
-KEY="d2933ec80ea25114471b2a3ace11d0d05e013f228c1a610fd4ad0aa16b804f3605dc98a94c1a47aa" #replace with your key
+KEY="" #replace with your key
 def send_req(ip,format):
     url = 'https://api.abuseipdb.com/api/v2/check'
     querystring = {
