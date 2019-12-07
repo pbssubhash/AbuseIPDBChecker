@@ -8,6 +8,7 @@ This is a Python Script to query the ABUSE IP DB with an IP or a list of IPs.
 git clone https://github.com/pbssubhash/AbuseIPDBChecker # need git for getting this done, alternatively download a zip!!
 cd AbuseIPDBChecker
 python AbuseIPDBChecker.py # will print the help
+pip install requests 
 ```
 ## Get an API Key 
 1. Go to https://www.abuseipdb.com/ and sign up for a new account.
