@@ -41,12 +41,12 @@ else:
             print("ip,total_reports,isp,abuse_confidence,is_whitelisted,last_reported_at")
         for i in ips:
             resp = send_req(i,args.format)
-            if "error" not in None:
+            if "error" not in resp:
                 print(resp)
     elif(args.ip is not None):
         if args.format == "csv":
             print("ip,total_reports,isp,abuse_confidence,is_whitelisted,last_reported_at")
         resp = send_req(args.ip, args.format)
-        if "error" not in None:
+        if "error" not in resp:
             print(resp)
         
