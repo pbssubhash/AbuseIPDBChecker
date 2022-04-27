@@ -1,7 +1,7 @@
 # c0ded by zer0_p1k4chu
 import requests
 import argparse
-import json
+import json,time
 KEY="" #replace with your key
 def send_req(ip,format):
     url = 'https://api.abuseipdb.com/api/v2/check'
@@ -13,6 +13,7 @@ def send_req(ip,format):
             'Key': KEY
     }
     response = requests.request(method='GET', url=url, headers=headers, params=querystring)
+    time.sleep(5)
     if(response.headers['X-RateLimit-Remaining'] == 0 or response.status_code == 429):
         print("Rate Limiting reached. Got 429 error!")
         exit()
